@@ -1,6 +1,6 @@
-[submodule "src/Symfony/Component/ClassLoader"]
-	path = src/Symfony/Component/ClassLoader
+[submodule "vendor/Symfony/Component/ClassLoader"]
+	path = vendor/Symfony/Component/ClassLoader
 	url = https://github.com/symfony/ClassLoader.git
-[submodule "src/Symfony/Component/Console"]
-	path = src/Symfony/Component/Console
+[submodule "vendor/Symfony/Component/Console"]
+	path = vendor/Symfony/Component/Console
 	url = https://github.com/symfony/Console.git
