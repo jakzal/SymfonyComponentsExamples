@@ -4,26 +4,16 @@ require_once __DIR__.'/src/autoload.php';
 
 use Symfony\Component\Finder as Finder;
 
-$components = Finder\Finder::create()
-    ->directories()
-    ->depth(0)
-    ->in('vendor/Symfony/Component');
-
-echo "Installed Symfony components:\n";
-foreach ($components as $dir) {
-    printf("* %s \n", $dir->getFilename());
-}
-
 $files = Finder\Finder::create()
     ->files()
-    ->name('*.php')
-    ->size('<2k')
-    ->date('since yesterday')
+    ->name('/^He.+Command.php$/')
+    ->size('<4k')
+    ->date('untill yesterday')
     ->sortByName()
     ->in('.');
 
-echo "PHP files below 2k modified since yesterday:\n";
+echo "Command files starting with 'He' below 4k modified untill yesterday:\n";
 foreach ($files as $file) {
-    printf("* %s \n", $file->getFilename());
+    printf("* %s %s\n", $file->getFilename(), date('Y-m-d H:i', $file->getMTime()));
 }
 
