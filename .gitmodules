@@ -7,3 +7,12 @@
 [submodule "vendor/Symfony/Component/Finder"]
 	path = vendor/Symfony/Component/Finder
 	url = https://github.com/symfony/Finder.git
+[submodule "vendor/Symfony/Component/DependencyInjection"]
+	path = vendor/Symfony/Component/DependencyInjection
+	url = https://github.com/symfony/DependencyInjection.git
+[submodule "vendor/Buzz"]
+	path = vendor/Buzz
+	url = https://github.com/kriswallsmith/Buzz.git
+[submodule "vendor/Symfony/Component/Config"]
+	path = vendor/Symfony/Component/Config
+	url = https://github.com/symfony/Config.git
