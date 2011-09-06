@@ -3,8 +3,8 @@
 require_once __DIR__.'/src/autoload.php';
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Dumper\GraphvizDumper;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
-use Symfony\Component\DependencyInjection\Dumper\PhpDumper;
 use Symfony\Component\Config\FileLocator;
 
 /**
@@ -16,9 +16,9 @@ $loader = new XmlFileLoader($serviceContainer, new FileLocator(__DIR__.'/config'
 $loader->load('buzz.xml');
 
 /**
- * Dumping services
+ * Dumping services to graphviz
+ * Save the output to a services.dot file and generate a graph with: dot -Tpng -o services.png services.dot
  */
 
-echo "Services dumped to PHP:\n";
-$dumper = new PhpDumper($serviceContainer);
+$dumper = new GraphvizDumper($serviceContainer);
 echo $dumper->dump();
