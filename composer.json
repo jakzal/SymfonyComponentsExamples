@@ -1,0 +1,13 @@
+{
+    "require": {
+        "symfony/class-loader": "*",
+        "symfony/config": "*",
+        "symfony/console": "*",
+        "symfony/dependency-injection": "*",
+        "symfony/finder": "*",
+        "kriswallsmith/buzz": "*"
+    },
+    "autoload": {
+        "psr-0": { "PSS": "src/" }
+    }
+}

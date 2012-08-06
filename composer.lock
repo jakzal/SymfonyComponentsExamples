@@ -1,0 +1,37 @@
+{
+    "hash": "69b89b7ca3ec02ec673079dadcf42af4",
+    "packages": [
+        {
+            "package": "kriswallsmith/buzz",
+            "version": "v0.7"
+        },
+        {
+            "package": "symfony/class-loader",
+            "version": "v2.0.16"
+        },
+        {
+            "package": "symfony/config",
+            "version": "v2.0.16"
+        },
+        {
+            "package": "symfony/console",
+            "version": "v2.0.16"
+        },
+        {
+            "package": "symfony/dependency-injection",
+            "version": "v2.0.16"
+        },
+        {
+            "package": "symfony/finder",
+            "version": "v2.0.16"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ]
+}
