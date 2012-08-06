@@ -2,10 +2,12 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-use Symfony\Component\Console as Console;
+use PSS\Command\HelloWorldCommand;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Shell;
 
-$application = new Console\Application('Demo', '1.0.0');
-$application->add(new PSS\Command\HelloWorldCommand('hello-world'));
+$application = new Application('Demo', '1.0.0');
+$application->add(new HelloWorldCommand('hello-world'));
 
-$shell = new Console\Shell($application);
+$shell = new Shell($application);
 $shell->run();
