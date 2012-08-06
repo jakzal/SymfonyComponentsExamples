@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
@@ -12,7 +12,7 @@ use Symfony\Component\Config\FileLocator;
  */
 
 $serviceContainer = new ContainerBuilder();
-$loader = new XmlFileLoader($serviceContainer, new FileLocator(__DIR__.'/config'));
+$loader = new XmlFileLoader($serviceContainer, new FileLocator(__DIR__.'/../config'));
 $loader->load('buzz.xml');
 
 /**
