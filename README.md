@@ -1,7 +1,7 @@
 Usage examples of Symfony components
 ====================================
 
-This repostory was created in times when there was no documentation for Symfony components. Currently this repository is outdated and the best resource is the [official Symfony documentation](http://symfony.com/doc/current/components/index.html).
+**Warning**: This repostory was created in times when there was no documentation for Symfony components. Currently this repository is outdated and the best resource is the [official Symfony documentation](http://symfony.com/doc/current/components/index.html).
 
 Installation
 ------------
